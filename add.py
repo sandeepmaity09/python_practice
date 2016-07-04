@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-def add(a,b):
-	c=a+b
-	return c
+import sys
+print((int(sys.argv[1])+int(sys.argv[2])))
 
