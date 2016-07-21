@@ -11,11 +11,11 @@ for i in range(T):
 
 check=True
 while check:
-	query=str(input())
-	if query == EOF:
+	query=input()
+	if query == '':
 		check = False
-
-	if query in dic.keys():
-		print(query,'=',dic[query])
 	else:
-		print("Not found")
+		if query in dic.keys():
+			print(query,'=',dic[query])
+		elif query not in dic.keys():
+			print("Not found")
